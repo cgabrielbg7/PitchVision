@@ -1,0 +1,66 @@
+# --- Secrets (most important) ---
+.env
+.env.*
+!.env.example
+
+# --- Personal Claude Code files ---
+CLAUDE.local.md
+.claude/settings.local.json
+
+# --- Data and footage ---
+data/*
+!data/SOURCES.md
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# --- Models, weights and engines ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.safetensors
+/weights/
+/models/
+runs/
+
+# --- CUDA builds and profiling ---
+cuda/build/
+*.o
+*.nsys-rep
+*.ncu-rep
+*.qdrep
+
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Web (Next.js) ---
+web/node_modules/
+web/.next/
+web/out/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
